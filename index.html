@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academic Profile</title>
+    <title>张朝扬 - 学术个人主页</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -25,7 +26,7 @@
                         },
                     },
                     fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        sans: ['Noto Sans SC', 'Inter', 'system-ui', 'sans-serif'],
                     },
                 },
             },
@@ -36,13 +37,15 @@
     <!-- Header Navigation -->
     <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold">John Doe</a>
+            <a href="#" class="text-2xl font-bold">张朝扬</a>
             
             <!-- Desktop Navigation -->
             <nav class="hidden md:flex space-x-8">
-                <a href="#about" class="hover:text-gray-600 transition-colors">About Me</a>
-                <a href="#publications" class="hover:text-gray-600 transition-colors">Publications</a>
-                <a href="#projects" class="hover:text-gray-600 transition-colors">Projects</a>
+                <a href="#about" class="hover:text-gray-600 transition-colors">个人简介</a>
+                <a href="#education" class="hover:text-gray-600 transition-colors">教育背景</a>
+                <a href="#research" class="hover:text-gray-600 transition-colors">科研经历</a>
+                <a href="#competition" class="hover:text-gray-600 transition-colors">竞赛实践</a>
+                <a href="#skills" class="hover:text-gray-600 transition-colors">技能特长</a>
             </nav>
             
             <!-- Mobile Menu Button -->
@@ -54,92 +57,348 @@
         <!-- Mobile Navigation -->
         <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
             <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
-                <a href="#about" class="py-2 hover:text-gray-600 transition-colors">About Me</a>
-                <a href="#publications" class="py-2 hover:text-gray-600 transition-colors">Publications</a>
-                <a href="#projects" class="py-2 hover:text-gray-600 transition-colors">Projects</a>
+                <a href="#about" class="py-2 hover:text-gray-600 transition-colors">个人简介</a>
+                <a href="#education" class="py-2 hover:text-gray-600 transition-colors">教育背景</a>
+                <a href="#research" class="py-2 hover:text-gray-600 transition-colors">科研经历</a>
+                <a href="#competition" class="py-2 hover:text-gray-600 transition-colors">竞赛实践</a>
+                <a href="#skills" class="py-2 hover:text-gray-600 transition-colors">技能特长</a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="py-20 bg-gradient-to-b from-gray-100 to-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">张朝扬</h1>
+                <p class="text-xl text-gray-600 mb-6">统计学学士 | 东南大学数学学院</p>
+                <div class="flex justify-center space-x-6 text-gray-600">
+                    <a href="tel:17760989363" class="hover:text-gray-900 transition-colors">
+                        <i class="fa fa-phone mr-2"></i>17760989363
+                    </a>
+                    <a href="mailto:213233111@seu.edu.cn" class="hover:text-gray-900 transition-colors">
+                        <i class="fa fa-envelope mr-2"></i>213233111@seu.edu.cn
+                    </a>
+                </div>
+            </div>
+        </section>
+
         <!-- About Me Section -->
         <section id="about" class="py-16 bg-white">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8">About Me</h2>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-gray-200 pb-4">个人简介</h2>
                 <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <p class="text-lg mb-4">I am a research scientist specializing in artificial intelligence and machine learning. My work focuses on developing novel algorithms for natural language processing and computer vision applications.</p>
-                        <p class="mb-4">With a background in computer science and mathematics, I aim to bridge the gap between theoretical research and practical applications.</p>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 shadow-sm">
+                        <p class="text-lg font-medium leading-relaxed mb-4 tracking-wide">
+                            东南大学数学学院统计学本科生，专业排名<strong>2/16</strong>。专注于优化算法、机器学习与智能系统的研究，
+                            在分布式优化、大语言模型增强推荐、智能车辆网等领域具有扎实的理论基础和丰富的实践经验。
+                        </p>
+                        <p class="leading-relaxed tracking-wide">
+                            具备扎实的数学功底和编程能力，熟练掌握Python、C++等编程语言，熟悉PyTorch深度学习框架和Gurobi优化求解器。
+                            在科研方面，以第一作者身份在CCC（中国控制会议，EI会议）发表论文一篇。
+                        </p>
                     </div>
                     <div>
-                        <h3 class="text-xl font-semibold mb-3">Research Interests</h3>
-                        <ul class="list-disc pl-5 mb-4">
-                            <li class="mb-2">Natural Language Processing</li>
-                            <li class="mb-2">Computer Vision</li>
-                            <li class="mb-2">Machine Learning</li>
-                            <li class="mb-2">Artificial Intelligence</li>
-                        </ul>
-                        <h3 class="text-xl font-semibold mb-3">Education</h3>
-                        <ul class="list-disc pl-5">
-                            <li class="mb-2">Ph.D. in Computer Science, University X, 2020</li>
-                            <li class="mb-2">M.S. in Computer Science, University Y, 2016</li>
-                            <li class="mb-2">B.S. in Computer Science, University Z, 2014</li>
+                        <div class="flex justify-center mb-6">
+                            <img src="证件照新.jpg" alt="张朝扬" class="w-48 h-64 object-cover rounded-md border-2 border-gray-200 shadow-sm">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">研究方向</h3>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">分布式优化</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">智能电网</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">大语言模型</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">推荐系统</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">智能车辆网</span>
+                            <span class="px-3 py-1 bg-gray-200 rounded-full text-sm">强化学习</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4">语言能力</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fa fa-check-circle text-green-600 mr-2"></i>
+                                <span>英语六级 548分</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fa fa-check-circle text-green-600 mr-2"></i>
+                                <span>英语四级 605分</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Publications Section -->
-        <section id="publications" class="py-16 bg-gray-50">
+        <!-- Education Section -->
+        <section id="education" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8">Publications</h2>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-gray-200 pb-4">教育背景</h2>
+                <div class="bg-white p-8 shadow-sm">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold">东南大学</h3>
+                            <p class="text-lg text-gray-600">数学学院 · 统计学 · 学士</p>
+                        </div>
+                        <span class="text-gray-500 mt-2 md:mt-0">2023.9 - 至今</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-lg font-semibold text-gray-800 mb-2">专业排名：2/16</p>
+                        <h4 class="font-semibold mb-2">核心课程成绩：</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
+                            <span class="bg-gray-100 px-3 py-2 rounded">高等代数与解析几何Ⅱ (96)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">数学分析Ⅲ (95)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">数理统计 (94)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">随机过程 (98)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">贝叶斯分析 (97)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">最优化方法 (91)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">抽样调查 (96)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">多元统计分析 (93)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">程序设计与算法语言Ⅱ (95)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">数据结构与算法 (91)</span>
+                            <span class="bg-gray-100 px-3 py-2 rounded">属性数据分析 (96)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-gray-200 pb-4">科研经历</h2>
                 <div class="space-y-8">
-                    <!-- Publication 1 -->
-                    <div class="bg-white p-6 shadow-sm">
-                        <h3 class="text-xl font-semibold mb-2">A Novel Approach to Sentiment Analysis Using Deep Learning</h3>
-                        <p class="text-gray-600 mb-2">John Doe, Jane Smith, Bob Johnson</p>
-                        <p class="text-gray-600 mb-2">Proceedings of the 2022 Conference on Neural Information Processing Systems (NeurIPS)</p>
-                        <p class="text-gray-600">2022</p>
+                    <!-- Research 1 -->
+                    <div class="bg-gray-50 p-6 shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">网络化虚拟电厂的分布式优化</h3>
+                            <span class="text-gray-500 mt-2 md:mt-0">2024.11 - 2026.4</span>
+                        </div>
+                        <p class="text-gray-600 mb-3">CCC（EI会议）一作 | 项目编号：62573116</p>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">项目背景：</h4>
+                                <p class="text-gray-700 leading-relaxed">
+                                    双碳目标下分布式能源高比例渗透，集中式调度存在隐私泄露、扩展性差等缺陷，多VPP P2P交易成为主流范式。
+                                    针对现有方案存在的"Bang-Bang"交易死锁、动态低碳激励缺失、传统ADMM收敛震荡难以满足15分钟实时调度三大核心痛点开展研究。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">核心贡献：</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>构建日前-实时两阶段滚动调度框架，深度嵌入阶梯碳交易机制</li>
+                                    <li>提出基于电气距离的二次过网费模型，作为Tikhonov正则化项严格凸化解空间</li>
+                                    <li>定制化设计DA-ADMM算法，融合主从残差平衡与共识阻尼机制</li>
+                                    <li>基于Python 3.9+Gurobi 9.1在IEEE 33节点系统完成仿真验证</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">项目成果：</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>系统碳排放降低1.05%，运营成本仅增加0.02%</li>
+                                    <li>与集中式最优解差距仅2.16%，DA/RT阶段分别收敛28/32次，完全满足实时调度要求</li>
+                                    <li>算法可扩展至30个VPP的大规模系统，迭代次数呈亚线性增长</li>
+                                    <li>以第一作者撰写论文已被中国控制会议智能电网方向录用</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Publication 2 -->
-                    <div class="bg-white p-6 shadow-sm">
-                        <h3 class="text-xl font-semibold mb-2">Transfer Learning for Cross-Domain Image Classification</h3>
-                        <p class="text-gray-600 mb-2">John Doe, Alice Brown</p>
-                        <p class="text-gray-600 mb-2">Journal of Machine Learning Research (JMLR)</p>
-                        <p class="text-gray-600">2021</p>
+
+                    <!-- Research 2 -->
+                    <div class="bg-gray-50 p-6 shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">大语言模型增强的个性化推荐算法研究</h3>
+                            <span class="text-gray-500 mt-2 md:mt-0">2026.1 - 至今</span>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">项目背景：</h4>
+                                <p class="text-gray-700 leading-relaxed">
+                                    传统协同过滤推荐长期存在语义缺失、冷启动困难和可解释性差的核心问题。大语言模型为解决这些痛点带来了革命性机遇，
+                                    但现有LLM增强推荐框架仍存在异构信号融合不充分、效率与效果难以平衡的普遍缺陷，亟待设计更高效统一的融合范式。
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">核心工作：</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>系统性调研传统协同过滤与LLM增强推荐领域10+篇顶会论文</li>
+                                    <li>覆盖MF、BPR、NCF、RLMRec、RGCF-XRec、TAGCF、TCA4Rec等核心模型</li>
+                                    <li>掌握PyTorch深度学习框架，项目持续推进中</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Research 3 -->
+                    <div class="bg-gray-50 p-6 shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold">面向智能车辆网的车辆编队研究</h3>
+                            <span class="text-gray-500 mt-2 md:mt-0">2025.11 - 2026.4</span>
+                        </div>
+                        
+                        <div class="space-y-3">
+                            <div>
+                                <h4 class="font-semibold text-gray-800">核心工作：</h4>
+                                <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                    <li>完成非对称三阶动力学模型构建，将驱动与制动系统分通道建模</li>
+                                    <li>引入切换系统框架刻画加减速模式切换</li>
+                                    <li>基于多李雅普诺夫函数与平均驻留时间理论，完成单系统与切换系统的全局指数稳定性证明</li>
+                                    <li>推导得到系统稳定的最小平均驻留时间下界，在Python上仿真证明其有效性</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="py-16 bg-white">
+        <!-- Competition Section -->
+        <section id="competition" class="py-16 bg-gray-50">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl font-bold mb-8">Projects</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <!-- Project 1 -->
-                    <div class="bg-gray-50 p-6 shadow-sm">
-                        <h3 class="text-xl font-semibold mb-2">AI-Powered Language Translation System</h3>
-                        <p class="mb-4">A neural machine translation system that achieves state-of-the-art performance on multiple language pairs.</p>
-                        <p class="text-gray-600 mb-2">Technologies:</p>
-                        <ul class="list-disc pl-5">
-                            <li class="mb-1">Python</li>
-                            <li class="mb-1">PyTorch</li>
-                            <li class="mb-1">Transformer Architecture</li>
-                        </ul>
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-gray-200 pb-4">竞赛实践</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 shadow-sm flex items-center">
+                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-trophy text-yellow-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">全国大学生数学建模竞赛</h3>
+                            <p class="text-gray-600">江苏赛区二等奖</p>
+                        </div>
                     </div>
-                    <!-- Project 2 -->
-                    <div class="bg-gray-50 p-6 shadow-sm">
-                        <h3 class="text-xl font-semibold mb-2">Computer Vision for Medical Imaging</h3>
-                        <p class="mb-4">A deep learning system for detecting and classifying abnormalities in medical images.</p>
-                        <p class="text-gray-600 mb-2">Technologies:</p>
-                        <ul class="list-disc pl-5">
-                            <li class="mb-1">Python</li>
-                            <li class="mb-1">TensorFlow</li>
-                            <li class="mb-1">Convolutional Neural Networks</li>
-                        </ul>
+                    <div class="bg-white p-6 shadow-sm flex items-center">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-calculator text-blue-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">全国大学生数学竞赛</h3>
+                            <p class="text-gray-600">数学A类二等奖</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm flex items-center">
+                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-globe text-green-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">美国大学生数学建模竞赛</h3>
+                            <p class="text-gray-600">H奖</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 shadow-sm flex items-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fa fa-users text-purple-600 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">东南大学暑期社会实践</h3>
+                            <p class="text-gray-600">优秀团队三等奖</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-8 border-b-2 border-gray-200 pb-4">技能特长</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">专业技能</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">Python</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">精通</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">Gurobi</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">熟练</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">PyTorch</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">熟练</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">C++</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 75%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">良好</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">Tableau</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 70%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">良好</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">SPSS</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 70%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">良好</span>
+                            </div>
+                            <div class="flex items-center">
+                                <span class="w-24 font-medium">R语言</span>
+                                <div class="flex-1 bg-gray-200 rounded-full h-2">
+                                    <div class="bg-gray-800 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600">良好</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4">荣誉称号</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center bg-yellow-50 p-3 rounded">
+                                <i class="fa fa-star text-yellow-500 mr-3"></i>
+                                <span>国家励志奖学金</span>
+                            </div>
+                            <div class="flex items-center bg-blue-50 p-3 rounded">
+                                <i class="fa fa-award text-blue-500 mr-3"></i>
+                                <span>至善学子奖学金</span>
+                            </div>
+                            <div class="flex items-center bg-green-50 p-3 rounded">
+                                <i class="fa fa-certificate text-green-500 mr-3"></i>
+                                <span>优秀团员</span>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-semibold mb-4 mt-6">兴趣爱好</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">篮球</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">健身</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">吉他</span>
+                            <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">骑行</span>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-3">前五学期平均体育成绩95+</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-4">学生工作</h3>
+                    <div class="flex flex-wrap gap-4">
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg flex items-center">
+                            <i class="fa fa-user-tie mr-2 text-gray-600"></i>
+                            班级组织委员
+                        </span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg flex items-center">
+                            <i class="fa fa-flask mr-2 text-gray-600"></i>
+                            院科协秘书处成员
+                        </span>
+                        <span class="px-4 py-2 bg-gray-100 rounded-lg flex items-center">
+                            <i class="fa fa-heart mr-2 text-gray-600"></i>
+                            圆梦爱心社成员
+                        </span>
                     </div>
                 </div>
             </div>
@@ -151,17 +410,14 @@
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
-                    <p>© 2024 John Doe. All rights reserved.</p>
+                    <p>© 2026 张朝扬. 保留所有权利.</p>
                 </div>
-                <div class="flex space-x-4">
-                    <a href="mailto:john.doe@example.com" class="hover:text-gray-300 transition-colors">
-                        <i class="fa fa-envelope"></i> Email
+                <div class="flex space-x-6">
+                    <a href="tel:17760989363" class="hover:text-gray-300 transition-colors">
+                        <i class="fa fa-phone mr-1"></i> 电话
                     </a>
-                    <a href="https://scholar.google.com" class="hover:text-gray-300 transition-colors">
-                        <i class="fa fa-google"></i> Scholar
-                    </a>
-                    <a href="https://github.com" class="hover:text-gray-300 transition-colors">
-                        <i class="fa fa-github"></i> GitHub
+                    <a href="mailto:213233111@seu.edu.cn" class="hover:text-gray-300 transition-colors">
+                        <i class="fa fa-envelope mr-1"></i> 邮箱
                     </a>
                 </div>
             </div>
